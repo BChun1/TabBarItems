@@ -1,26 +1,145 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jdz-wj-qjo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Home-->
+        <scene sceneID="WaR-Qf-CF8">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" id="NcW-eB-kYf" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="y5v-YI-Bzr"/>
+                        <viewControllerLayoutGuide type="bottom" id="KAx-er-dYp"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="Ac2-vt-utH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Home!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="890-bg-VUx">
+                                <rect key="frame" x="125" y="323" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11271385200857065" green="0.61585933898286771" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="890-bg-VUx" firstAttribute="centerY" secondItem="Ac2-vt-utH" secondAttribute="centerY" id="SQR-y2-dUB"/>
+                            <constraint firstItem="890-bg-VUx" firstAttribute="centerX" secondItem="Ac2-vt-utH" secondAttribute="centerX" id="Uwa-Lx-Zsl"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home-25" id="gB6-2W-QKR"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uLr-gE-grr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-242" y="722"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="F0W-Nb-fnw">
+            <objects>
+                <viewController id="cuF-xm-N5q" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kte-j8-QeF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ntz-d3-2Pw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AtP-De-GVG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gN7-hv-gtS">
+                                <rect key="frame" x="16" y="20" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30278255386231717" green="0.69753886010362698" blue="0.46425929524990373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Messages" image="002-speech-bubble.png" id="zS5-RB-r9A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfS-Ut-qtM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242.40000000000001" y="-753.37331334332839"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="AuS-us-hZU">
+            <objects>
+                <tabBarController id="jdz-wj-qjo" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="EZZ-Dz-4zZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NcW-eB-kYf" kind="relationship" relationship="viewControllers" id="gms-Ft-QeL"/>
+                        <segue destination="cuF-xm-N5q" kind="relationship" relationship="viewControllers" id="yml-OV-UVO"/>
+                        <segue destination="bbq-Xe-201" kind="relationship" relationship="viewControllers" id="KXf-kp-7np"/>
+                        <segue destination="vy8-AF-z0p" kind="relationship" relationship="viewControllers" id="xrD-AI-KWa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ns0-aS-000" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-237" y="-31"/>
+        </scene>
+        <!--Web-->
+        <scene sceneID="nlX-AK-2Vl">
+            <objects>
+                <viewController title="Web" id="vy8-AF-z0p" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BbX-nC-GcX"/>
+                        <viewControllerLayoutGuide type="bottom" id="xrN-HS-xVH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3s6-7A-0Fu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Website Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j1Z-8h-SEh">
+                                <rect key="frame" x="106" y="28" width="168" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.60727931681492409" blue="0.04776621796193492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Web" image="001-globe-grid" id="Gm0-RZ-Voq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J32-pL-uRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1039.2" y="-31.03448275862069"/>
+        </scene>
+        <!--Calendar-->
+        <scene sceneID="VDg-Qg-n1t">
+            <objects>
+                <viewController id="bbq-Xe-201" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tTG-d6-Uhi"/>
+                        <viewControllerLayoutGuide type="bottom" id="6wm-D4-QrP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QIZ-6X-xja">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.079394028178770171" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="Calendar-25.png" id="zuQ-rY-Eri"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEV-fn-u1C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="-31.03448275862069"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="001-globe-grid" width="32" height="32"/>
+        <image name="002-speech-bubble.png" width="32" height="32"/>
+        <image name="Calendar-25.png" width="25" height="25"/>
+        <image name="Home-25" width="25" height="25"/>
+    </resources>
 </document>

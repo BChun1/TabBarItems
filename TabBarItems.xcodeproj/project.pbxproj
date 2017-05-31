@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		BB98D1571E7FDFB600FA2116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB98D1561E7FDFB600FA2116 /* AppDelegate.swift */; };
-		BB98D1591E7FDFB600FA2116 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB98D1581E7FDFB600FA2116 /* ViewController.swift */; };
 		BB98D15C1E7FDFB600FA2116 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB98D15A1E7FDFB600FA2116 /* Main.storyboard */; };
 		BB98D15E1E7FDFB600FA2116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB98D15D1E7FDFB600FA2116 /* Assets.xcassets */; };
 		BB98D1611E7FDFB600FA2116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB98D15F1E7FDFB600FA2116 /* LaunchScreen.storyboard */; };
+		BB98D1691E7FE49100FA2116 /* png in Resources */ = {isa = PBXBuildFile; fileRef = BB98D1681E7FE49100FA2116 /* png */; };
+		BB98D16B1E7FF32800FA2116 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB98D16A1E7FF32800FA2116 /* HomeViewController.swift */; };
+		BB98D16D1E7FF34600FA2116 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB98D16C1E7FF34600FA2116 /* CalendarViewController.swift */; };
+		BB98D16F1E7FF36100FA2116 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB98D16E1E7FF36100FA2116 /* WebViewController.swift */; };
+		BB98D1711E7FF36F00FA2116 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB98D1701E7FF36F00FA2116 /* MessagesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB98D1531E7FDFB600FA2116 /* TabBarItems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarItems.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB98D1561E7FDFB600FA2116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB98D1581E7FDFB600FA2116 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB98D15B1E7FDFB600FA2116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB98D15D1E7FDFB600FA2116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB98D1601E7FDFB600FA2116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB98D1621E7FDFB600FA2116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB98D1681E7FE49100FA2116 /* png */ = {isa = PBXFileReference; lastKnownFileType = folder; path = png; sourceTree = "<group>"; };
+		BB98D16A1E7FF32800FA2116 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BB98D16C1E7FF34600FA2116 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		BB98D16E1E7FF36100FA2116 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		BB98D1701E7FF36F00FA2116 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				BB98D1561E7FDFB600FA2116 /* AppDelegate.swift */,
-				BB98D1581E7FDFB600FA2116 /* ViewController.swift */,
 				BB98D15A1E7FDFB600FA2116 /* Main.storyboard */,
+				BB98D16E1E7FF36100FA2116 /* WebViewController.swift */,
+				BB98D1701E7FF36F00FA2116 /* MessagesViewController.swift */,
+				BB98D16A1E7FF32800FA2116 /* HomeViewController.swift */,
+				BB98D16C1E7FF34600FA2116 /* CalendarViewController.swift */,
 				BB98D15D1E7FDFB600FA2116 /* Assets.xcassets */,
 				BB98D15F1E7FDFB600FA2116 /* LaunchScreen.storyboard */,
 				BB98D1621E7FDFB600FA2116 /* Info.plist */,
+				BB98D1681E7FE49100FA2116 /* png */,
 			);
 			path = TabBarItems;
 			sourceTree = "<group>";
@@ -123,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB98D1691E7FE49100FA2116 /* png in Resources */,
 				BB98D1611E7FDFB600FA2116 /* LaunchScreen.storyboard in Resources */,
 				BB98D15E1E7FDFB600FA2116 /* Assets.xcassets in Resources */,
 				BB98D15C1E7FDFB600FA2116 /* Main.storyboard in Resources */,
@@ -136,8 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB98D1591E7FDFB600FA2116 /* ViewController.swift in Sources */,
+				BB98D1711E7FF36F00FA2116 /* MessagesViewController.swift in Sources */,
+				BB98D16D1E7FF34600FA2116 /* CalendarViewController.swift in Sources */,
 				BB98D1571E7FDFB600FA2116 /* AppDelegate.swift in Sources */,
+				BB98D16B1E7FF32800FA2116 /* HomeViewController.swift in Sources */,
+				BB98D16F1E7FF36100FA2116 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
